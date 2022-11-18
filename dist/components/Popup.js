@@ -5,10 +5,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 require("./popup.css");
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Popup = props => {
-  return props.trigger ? /*#__PURE__*/React.createElement("div", {
+  return props.trigger ? /*#__PURE__*/_react.default.createElement("div", {
     className: "popup"
-  }, props.children, /*#__PURE__*/React.createElement("button", {
+  }, props.children, /*#__PURE__*/_react.default.createElement("button", {
     className: "popup-button",
     type: "button",
     onClick: () => props.setTrigger(false)
